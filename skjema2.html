@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Skjema 2 - Mus </title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="skjemaFeil.js"></script>
+</head>
+<body>
+    <h1>Skjema 2 - Musepeker</h1>
+    <div class = "forklaring">
+        <h1>Om dette skjemaet</h1>
+        <p>
+            Du skal fylle ut skjemaet med tekst som samsvarer med ordene eller tegnene over tekstfeltene. 
+            Når skjemaet er ferdig utfylt, trykker du på "Ferdig". Hvis utfyllingen er 
+            godkjent blir du tatt med til neste side, hvis ikke må du rette på det som ikke stemmer før du trykker på "Ferdig" igjen. 
+        </p>
+        <div class = "hjelp">
+            <h1>Navigeringshjelp</h1>
+            <h2>Musepeker</h2>
+            <p>
+                Bruk datamusen til å velge feltet du skal skrive i, samt trykke "Ferdig". Skriv inn med tastatur. 
+            </p>
+            <h2>Tastatur</h2>
+            <p>
+                Bruk Tab-tasten for å gå til første felt. Etter du har skrevet ferdig bruker du Tab-tasten for å gå til neste.
+                Når du er ferdig med alle feltene bruker du også Tab-tasten for å markere "Ferdig"-knappen, så trykker du Enter-tasten for å gå til neste side. 
+                Om feil skulle oppstå trykker du Shift + Tab for å gå til forrige element. Skriv inn med tastatur. 
+            </p>
+            <h2>Touch</h2>
+            <p>
+                Bruk fingeren til å velge nytt felt, samt trykke "Ferdig". Skriv inn med tastaturet på mobilen. 
+            </p>
+        </div>
+    </div>
+    <h1>Skjema 2</h1>
+    <form name = "skjema" action = "skjema3.html" onsubmit = "return sjekkInput()" method = "post">
+        <label id = "input1Label">g</label>
+        <input type = "text" name = "input1"/>
+        <div id = "input1Feil"></div>
+        <br/>
+        <label id = "input2Label">c</label>
+        <input type = "text" name = "input2"/>
+        <div id = "input2Feil"></div>
+        <br/>
+        <label id = "input3Label">m</label>
+        <input type = "text" name = "input3"/>
+        <div id = "input3Feil"></div>
+        <br/>
+        <label id = "input4Label">w</label>
+        <input type = "text" name = "input4"/>
+        <div id = "input4Feil"></div>
+        <br/>
+        <label id = "input5Label">l</label>
+        <input type = "text" name = "input5"/>
+        <div id = "input5Feil"></div>
+        <br/>
+        <label id = "input6Label">y</label>
+        <input type = "text" name = "input6"/>
+        <div id = "input6Feil"></div>
+        <br/>
+        <label id = "input7Label">h</label>
+        <input type = "text" name = "input7"/>
+        <div id = "input7Feil"></div>
+        <br/>
+        <label id = "input8Label">p</label>
+        <input type = "text" name = "input8"/>
+        <div id = "input8Feil"></div>
+        <br/>
+        <div id = "feil"></div>
+        <input type = "submit" value = "Ferdig" name = "Ferdig"/> 
+    </form>
+</body>

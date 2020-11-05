@@ -1,0 +1,56 @@
+body {
+	margin-left: 1em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1em;
+}
+
+p {
+	margin: 0 2em 0 0;
+}
+
+.hjelp p {
+	margin: 0em;
+}
+
+.forklaring {
+	margin-bottom: 2em;
+	width: 70%;
+}
+
+.hjelp {
+	width: 70%;
+}
+
+form {
+	display: inline-block;
+}
+
+label {
+	display: block;
+	font-size: 1.5em;
+}
+
+.submit {
+	margin-top: 2em;
+	width: 30em;
+	height: 3em;
+	padding: 1em;
+}
+
+input {
+	display: block;
+	box-sizing: border-box;
+	padding: 1em;
+	margin: 1em 0 1em 0;
+	width: 30em;
+	height: 1.5em;
+	text-align: center;
+}
+
+
+
