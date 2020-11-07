@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <title>Skjema 2 - Mus </title>
+    <title>Skjema 1 - Mus</title>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="skjemaFeil.js"></script>
+    <script src="skjema.js"></script>
 </head>
 <body>
-    <h1>Skjema 2 - Musepeker</h1>
+    <h1>Skjema 1 - Musepeker</h1>
+    
     <div class = "forklaring">
         <div class = "hjelp">
             <h1>Navigeringshjelp</h1>
@@ -28,8 +29,8 @@
             </p>
         </div>
     </div>
-    <h1>Skjema 2</h1>
-    <form name = "skjema" action = "skjema3.html" onsubmit = "return sjekkInput()" method = "post">
+    <h1>Skjema 1</h1>
+    <form name = "skjema" action = "skjema2.html" onsubmit = "return sjekkInput()" method = "post">
         <label id = "input1Label">g</label>
         <input type = "text" name = "input1"/>
         <div id = "input1Feil"></div>
@@ -63,6 +64,6 @@
         <div id = "input8Feil"></div>
         <br/>
         <div id = "feil"></div>
-        <input type = "submit" value = "Ferdig" name = "Ferdig"/> 
+        <input type = "submit" value = "Ferdig" name = "Ferdig" class = "submit"/> 
     </form>
 </body>
