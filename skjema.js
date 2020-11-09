@@ -87,6 +87,7 @@ function sjekkInput(){
     /*
     returnerer true hvis alt stemmer. Skjemaet kan sendes inn
     */
-
+    $("#feil").html("Riktig i alle felt. Gå videre.")
     return true; 
+    
 }
