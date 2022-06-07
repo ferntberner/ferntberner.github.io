@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /*border: 1px solid red;*/
+}
+
+body {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*overflow: hidden;*/
+    background-color: #EFEFEF;
+}
+
+section{
+    height: 813px;
+    width: 375px;
+    /*border: 1px solid #ccc;*/
+    background-color: #EFEFEF;
+}
+
+.subMenu {
+    display: none;
+    transition: 1s;
+}
+
+
+.menu-open{
+    background-color: #2D2424;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 8px; 
+}
+
+.menu-open img {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.menu-close{
+    background-color: #2D2424;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.menu-close img {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.match-score{
+    width: 375px;
+    position: absolute;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-1-score-box, .team-2-score-box{
+    width: 70px;
+    height: 70px;
+    background-color: #2D2424;
+    border: 3px solid #FFFFFF;
+    color: #EFEFEF;
+    font-size: 4em;
+    text-align: center;
+}
+
+.team-1-score-box{
+    margin-left: 50px;
+}
+
+.team-2-score-box{
+    margin-right: 50px;
+}
+
+
+
+
+.plus-buttons {
+    position: absolute;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 263px;
+    display: flex; 
+    justify-content: center;
+}
+
+
+.plusleft, .plusright {
+    z-index: 1;
+    width: 130px;
+    height: 130px; 
+
+    background: #2D2424; 
+    border: 3px solid #8fbf7e;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+
+    border-radius: 50%;
+}
+
+.plusright{
+    margin-left: 75px;
+}
+
+.plusleft:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.plusright:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+
+.plusicon{
+    margin-top: 20px;
+}
+
+.minus-buttons {
+    position: absolute;
+    padding-left: 48px; 
+    padding-top: 420px;
+    display: flex; 
+    justify-content: center;
+}
+
+.minusleft, .minusright {
+    z-index: 1;
+    width: 75px;
+    height: 75px; 
+
+    background: #2D2424; 
+    border: 3px solid #e79090;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+
+    border-radius: 50%;
+}
+
+.minusright{
+    margin-left: 130px;
+}
+
+.minusleft:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.minusright:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.clock {
+    margin-top: 548px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.subclock {
+    text-align: center;
+    font-size: 48px;
+}
+
+.time-buttons{
+    width: 375px;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.btn-start, .btn-pause, .btn-stop{
+    z-index: 1;
+    background-color: #2D2424;
+    width: 75px;
+    height: 75px;
+    margin: 14px;
+    box-sizing: border-box;
+    border: 2.5px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-start:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.btn-pause:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.btn-stop:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.start-icon, .pause-icon, .stop-icon {
+    width: 40px; 
+    height: 40px;
+}
+
+.adj-buttons{
+    padding-top: 200px;
+}
+
+.btn-one, .btn-five, .btn-ten {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.adj-time{
+    z-index: 1;
+
+    width: 75px;
+    height: 75px; 
+
+    background: #2D2424; 
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.25);
+
+
+    border-radius: 50%;
+}
+
+.adj-time:active{
+    box-shadow: none;
+    transition: 0.25s;
+}
+
+.smallplusicon {
+    margin-top: 7.5px;
+}
+
+.onesecond, .fiveseconds, .tenseconds{
+    font-size: 4em;
+}
+
+.message{
+    display: flex;
+    position: absolute;
+}
+
+.message-body {
+    height: 75px; 
+    width: 275px;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.form-btn {
+    border: none;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+

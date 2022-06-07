@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" name="viewport" content="width = device-width, initial-scale = 1.0"/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Index</title>
+    </head>
+    <body>
+        <section id="reg-section">
+            <div class="subMenu" id="subMenu">
+                <div class="menu-close" id="menu-close" onclick="closeSubMenu()">
+                    <img src="../img/menu_close.svg">
+                </div>
+                <div class="adj-buttons">
+                    <div class="btn-one">
+                        <button class="adj-time" id="adj-down-one" onclick="adjustDownOne()">
+                            <img class="minusicon" src="../img/-.svg">
+                        </button>
+                        <span class="onesecond">1</span>
+                        <button class="adj-time" id="adj-up-one" onclick="adjustUpOne()">
+                            <img class="smallplusicon" src="../img/+.svg">
+                        </button>
+                    </div>
+                    <div class="btn-five">
+                        <button class="adj-time" id="adj-down-five" onclick="adjustDownFive()">
+                            <img class="minusicon" src="../img/-.svg">
+                        </button>
+                        <span class="fiveseconds">5</span>
+                        <button class="adj-time" id="adj-up-five" onclick="adjustUpFive()">
+                            <img class="smallplusicon" src="../img/+.svg">
+                        </button>
+                    </div>
+                    <div class="btn-ten">
+                        <button class="adj-time" id="adj-down-ten" onclick="adjustDownTen()">
+                            <img class="minusicon" src="../img/-.svg">
+                        </button>
+                        <span class="tenseconds">10</span>
+                        <button class="adj-time" id="adj-up-ten" onclick="adjustUpTen()">
+                            <img class="smallplusicon" src="../img/+.svg">
+                        </button>
+                    </div>
+                </div>
+                <div class="subclock" id="subtimer">
+                    <!-- THIS IS A PLACEHOLDER FOR LIVE CLOCK-->
+                    00:00
+                </div>
+                <div class="message">
+                    <input class="message-body">
+                    <button class="form-btn" id="form-btn"><img class="sendbutton" src="../img/send.svg"></button>
+                </div>
+            </div>
+            <div id="main-content">
+                <div class="menu-open" id="menu-open" onclick="openSubMenu()">
+                    <img src="../img/menu_open.svg">
+                </div>
+                <div class="match-score">
+                    <div class="team-1-score-box">
+                        <span id="team-1-score" >0</span>
+                    </div>
+                    <div class="team-2-score-box">
+                        <span id="team-2-score" value="0">0</span>
+                    </div>
+                </div>
+                <div class="plus-buttons">
+                    <button class="plusleft" type="button" id="plusleft" onclick="plusleft()">
+                        <img class="plusicon" src="../img/+.svg">
+                    </button>
+                    <button class="plusright" type="button" id="plusrigt" onclick="plusright()">
+                        <img class="plusicon" src="../img/+.svg">
+                    </button>
+                </div>
+                <div class="minus-buttons">
+                    <button class="minusleft" type="button" id="minusleft" onclick="minusleft()">
+                        <img class="minusicon" src="../img/-.svg">
+    
+                    </button>
+                    <button class="minusright" type="button" id="minusright" onclick="minusright()">
+                        <img class="minusicon" src="../img/-.svg">
+                    </button>
+                </div>
+                <div class="clock" id="timer">
+                    <!-- THIS IS A PLACEHOLDER FOR LIVE CLOCK-->
+                    30:00
+                </div>
+                <!-- Following div is anchored by Clock, make sure clock doesn't push this div too far down-->
+                <div class="time-buttons">
+                    <button class="btn-start" type="button" id="btn-start" onclick="startClock()">
+                        <img class="start-icon" src="../img/play-btn.svg">
+                    </button>
+                    <button class="btn-pause" type="button" id="btn-pause" onclick="pauseClock()">
+                        <img class="pause-icon" src="../img/pause-btn.svg">
+                    </button>
+                    <button class="btn-stop" type="button" id="btn-stop" onclick="stopClock()">
+                        <img class="stop-icon" src="../img/stop-btn.svg">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <script src="../js/register.js"></script>
+    </body>
+</html>
